@@ -1,0 +1,65 @@
+.header {
+  width: 100%;
+}
+
+.nav {
+  @include space-between;
+  height: 110px;
+
+  &-logo {
+    @include center;
+    gap: 10px;
+  }
+
+  &-menu-list {
+    @include center;
+    gap: 59px;
+
+    li {
+      color: #1f1f1f;
+    }
+  }
+
+  &-button button {
+    @include btn;
+  }
+
+  #check {
+    display: none;
+  }
+
+  .checkbtn {
+    font-size: 50px;
+    color: $primary-color;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav {
+    padding: 0 24px;
+  }
+
+  .nav .checkbtn {
+    display: block;
+    margin-right: 0;
+  }
+
+  .nav-button button {
+    display: none;
+  }
+
+  .nav-menu-list li {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 576px) {
+}
