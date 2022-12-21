@@ -1,0 +1,45 @@
+.ecosystem {
+  background-color: $hero-bg;
+  padding: 5rem 0;
+
+  &-container {
+    @include center;
+
+    span {
+      color: #508ff4;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 700;
+      padding-bottom: 20px;
+    }
+
+    h2 {
+      text-align: left;
+      padding-top: 20px;
+      max-width: 60%;
+    }
+
+    p {
+      line-height: 28px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .ecosystem-container {
+    flex-direction: column;
+    padding: 0 24px;
+  }
+
+  .ecosystem-container img {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .ecosystem-container-left,
+    .ecosystem-container-left h2 {
+      text-align: center;
+      max-width: 100%;
+    }
+  }
+}

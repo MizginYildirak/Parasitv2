@@ -1,4 +1,4 @@
-.eden {
+.chain {
   display: flex;
   padding: 5rem 0;
 
@@ -6,20 +6,12 @@
     @include center;
     gap: 120px;
 
-    &-left {
+    &-right {
       p {
         line-height: 28px;
       }
 
       &-top {
-        span {
-          color: #508ff4;
-          text-transform: uppercase;
-          font-size: 12px;
-          font-weight: 700;
-          padding-bottom: 20px;
-        }
-
         button {
           @include btn;
           background-color: $secondary-color;
@@ -51,25 +43,33 @@
 }
 
 @media only screen and (max-width: 1220px) {
-  .eden-container {
-    flex-direction: column;
+  .right {
+    padding-right: 0;
+  }
+
+  .chain {
+    padding: 0 24px;
+  }
+
+  .chain-container {
+    flex-direction: column-reverse;
     gap: 70px;
   }
 
-  .eden-container-right img {
+  .chain-container-left img {
     width: 100%;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .eden-container-left-bottom {
+  .chain-container-right-bottom {
     flex-direction: column;
     gap: 2rem;
   }
 
-  .eden-container-left-top h2,
-  .eden-container-left-top p,
-  .eden-container-left-top {
+  .chain-container-right-top h2,
+  .chain-container-right-top p,
+  .chain-container-right-top {
     text-align: center;
     max-width: 100%;
   }
