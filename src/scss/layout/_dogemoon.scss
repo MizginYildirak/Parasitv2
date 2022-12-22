@@ -1,0 +1,62 @@
+.dogemoon {
+  background-color: $dogemoon-bg;
+  @include center;
+  gap: 100px;
+
+  &-left {
+    position: relative;
+
+    .cryptoloria {
+      position: absolute;
+      top: 60px;
+    }
+  }
+
+  &-right {
+    span {
+      color: $secondary-color;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    p,
+    h2 {
+      color: white;
+      text-align: left;
+      margin-top: 20px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .dogemoon {
+    flex-direction: column;
+    padding: 3rem 24px;
+  }
+
+  .dogemoon img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .dogemoon {
+    gap: 20px;
+    text-align: center;
+  }
+
+  .dogemoon-left .cryptoloria {
+    top: 0;
+  }
+
+  .dogemoon-right h2 {
+    text-align: center;
+  }
+
+  .dogemoon-right p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
