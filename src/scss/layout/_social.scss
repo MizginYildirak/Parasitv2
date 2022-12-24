@@ -1,0 +1,115 @@
+.social {
+  padding: 3rem 0;
+  @include center;
+  flex-direction: column;
+  margin: auto;
+  border: 1px solid red;
+
+  &-top {
+    max-width: 50%;
+  }
+
+  p {
+    text-align: center;
+    line-height: 25px;
+  }
+
+  span {
+    color: $secondary-color;
+    font-weight: 600;
+    padding-bottom: 20px;
+  }
+
+  &-main {
+    @include center;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    .social-box {
+      @include column;
+      align-items: center;
+      text-align: center;
+      margin-top: 60px;
+      border: 1px solid #e5e5e5;
+      padding: 40px;
+      border-radius: 16px;
+    }
+
+    .social-box-center {
+      @include column;
+      align-items: center;
+      text-align: center;
+      margin-top: 60px;
+      border: 1px solid #e5e5e5;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0px 48px 70px 0px rgb(35 54 71 / 8%);
+
+      button {
+        @include btn;
+        background-color: $secondary-color;
+        color: white;
+      }
+    }
+
+    .discord {
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+      background-color: #5865f2;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .twitter {
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+      background-color: #55acee;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .telegram {
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+      background-color: #37aee2;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    p {
+      padding: 10px 0 40px;
+      line-height: 25px;
+    }
+
+    button {
+      @include btn;
+    }
+
+    .middle {
+      background-color: $secondary-color;
+      color: white;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .social {
+    padding: 3rem 24px;
+  }
+
+  .social-top {
+    max-width: 100%;
+  }
+
+  .social-main {
+    gap: 0;
+  }
+
+  .social-main .social-box,
+  .social-main .social-box-center {
+    margin-top: 40px;
+  }
+}
