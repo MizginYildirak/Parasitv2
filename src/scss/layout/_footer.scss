@@ -1,4 +1,5 @@
 .footer-top {
+  padding: 3rem 0;
   display: flex;
   align-items: baseline;
   gap: 40px;
@@ -7,6 +8,23 @@
     @include column;
     gap: 30px;
     flex: 1;
+
+    a {
+      display: flex;
+      gap: 10px;
+    }
+
+    .fa-twitter {
+      color: #03a9f4;
+    }
+
+    .fa-telegram {
+      color: #37aee2;
+    }
+
+    .fa-discord {
+      color: #5865f2;
+    }
 
     h3 {
       padding-bottom: 0;
@@ -22,5 +40,39 @@
       color: black;
       line-height: 25px;
     }
+  }
+}
+
+.footer-bottom {
+  color: white;
+  padding: 2rem;
+  background-color: #083378;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+
+    div:nth-child(2) {
+      display: flex;
+      gap: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .footer-top {
+    padding: 3rem 24px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .footer-bottom-container div:nth-child(2) {
+    gap: 10px;
   }
 }
