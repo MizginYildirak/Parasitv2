@@ -14,7 +14,7 @@ REQUIRED SECTIONS:
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="![blockchain 1](https://user-images.githubusercontent.com/101987484/209726085-e393b2ab-e14e-455f-995c-08e61d492a36.png).png" alt="logo" width="140"  height="auto" />
+ <img src="blockchain 1.png"alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Microverse README Template</b></h3>
