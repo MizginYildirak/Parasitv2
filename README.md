@@ -43,19 +43,6 @@ REQUIRED SECTIONS:
 
 - [Live Demo Link](https://parasitv2-kbf7.vercel.app)
 
-### Prerequisites
-
-In order to run this project you need:
-
-<!--
-Example command:
-
-```
-npm parcel index.html
-
-```
- -->
-
 
 ### Install
 
