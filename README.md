@@ -14,7 +14,7 @@ REQUIRED SECTIONS:
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
- <img src="blockchain 1.png"alt="logo" width="140"  height="auto" />
+ <img src="https://github.com/MizginYildirak/Parasitv2/blob/main/src/assets/paradis%20icon/blockchain%201.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Microverse README Template</b></h3>
