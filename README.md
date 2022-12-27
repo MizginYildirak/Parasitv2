@@ -5,10 +5,7 @@ REQUIRED SECTIONS:
 - About the Project
   - Built With
   - Live Demo
-- Getting Started
 - Authors
-- Contributing
-- Acknowledgements
 - License
 
 
@@ -30,12 +27,6 @@ REQUIRED SECTIONS:
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [📝 License](#license)
@@ -44,8 +35,6 @@ REQUIRED SECTIONS:
 
 # 📖 [Paradis] 
 
-> Describe your project in 1 or 2 sentences.
-
 **[Paradis]** is a website finance world.
 
 ## 🛠 Built With <a name="SCSS"></a>
@@ -53,8 +42,6 @@ REQUIRED SECTIONS:
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
 
 - [Live Demo Link](https://parasitv2-kbf7.vercel.app)
 
@@ -74,7 +61,7 @@ npm parcel index.html
 
 ### Install
 
-Install this project with:
+Install this project with: Nodejs
 
 <!--
 Example command:
