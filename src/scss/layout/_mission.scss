@@ -1,50 +1,50 @@
 .mission {
-  margin-bottom: 12rem;
-  @include center;
+  margin-bottom: 20rem;
+  display: flex;
   position: relative;
 
   &-top {
     max-width: 35%;
     background-color: $i-bg;
-    @include center;
+    display: flex;
     flex-direction: column;
-    padding: 150px;
     text-align: left;
     line-height: 25px;
     z-index: 2;
     position: absolute;
     left: 0;
-    margin-top: 6rem;
+    top: 0;
+    padding: 140px 100px 100px 150px;
+    background: linear-gradient(rgb(255, 237, 241), rgb(240, 240, 255));
   }
 
-  .story {
-    max-width: 35%;
-    padding: 110px 50px 50px 200px;
+  &-story {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
     line-height: 25px;
     background-color: $i-bg;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 100px;
+    padding: 80px 150px 50px 200px;
   }
 }
 
 @media only screen and (max-width: 1220px) {
   .mission-top {
-    padding: 100px 50px 100px 100px;
+    padding: 100px 100px 100px 150px;
   }
 
-  .mission .story {
-    padding: 110px 50px 20px 200px;
+  .mission-story {
+    max-width: 35%;
+    padding: 110px 50px 20px 120px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .mission-top {
-    padding: 80px;
-  }
-
-  .mission .story {
-    padding: 100px 50px 20px 150px;
+    padding: 100px 100px 100px 70px;
   }
 }
 
@@ -55,13 +55,13 @@
   }
 
   .mission-top {
-    max-width: 100%;
+    max-width: 100% !important;
     position: static;
     padding: 80px 24px;
     margin-top: 4rem;
   }
 
-  .mission .story {
+  .mission-story {
     max-width: 100%;
     position: static;
     padding: 80px 24px;

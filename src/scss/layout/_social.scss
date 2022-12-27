@@ -3,7 +3,6 @@
   @include center;
   flex-direction: column;
   margin: auto;
-  border: 1px solid red;
 
   &-top {
     max-width: 50%;
@@ -52,33 +51,6 @@
       }
     }
 
-    .discord {
-      width: 30px;
-      height: 30px;
-      padding: 5px;
-      background-color: #5865f2;
-      border-radius: 50%;
-      margin-bottom: 20px;
-    }
-
-    .twitter {
-      width: 30px;
-      height: 30px;
-      padding: 5px;
-      background-color: #55acee;
-      border-radius: 50%;
-      margin-bottom: 20px;
-    }
-
-    .telegram {
-      width: 30px;
-      height: 30px;
-      padding: 5px;
-      background-color: #37aee2;
-      border-radius: 50%;
-      margin-bottom: 20px;
-    }
-
     p {
       padding: 10px 0 40px;
       line-height: 25px;
@@ -86,6 +58,7 @@
 
     button {
       @include btn;
+      cursor: pointer;
     }
 
     .middle {

@@ -1,5 +1,5 @@
 body {
-  font-family: "Gilroy";
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -51,4 +51,58 @@ p {
 
 .fa-circle-check {
   color: green;
+}
+
+.card-icon {
+  width: 15px;
+  height: 15px;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.blue {
+  background-color: #80aef7;
+}
+
+.orange {
+  background-color: #f5c27b;
+}
+
+.green {
+  background-color: #62f5d1;
+}
+
+.pink {
+  background-color: #fa9d96;
+}
+
+// * {
+//   outline: 1px solid red;
+//   opacity: 1 !important;
+//   visibility: visible !important;
+// }
+
+.socials {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.discord {
+  background-color: #5865f2;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.telegram {
+  background-color: #37aee2;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
 }

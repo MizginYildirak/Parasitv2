@@ -6,10 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paradis</title>
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="./dist/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -91,7 +96,7 @@
                 access in UI/UX.
             </p>
         </div>
-        <div class="story">
+        <div class="mission-story">
             <h2>Our Story</h2>
             <p>
                 We want to share our passion and built value by enhancing and innovating monetary products in a
@@ -167,18 +172,32 @@
 
                 <div class="community-details-bottom">
                     <div class="community-details-bottom-total">
-                        <span>TOTAL VOTES</span>
+                        <span style="font-weight: bold;">TOTAL VOTES</span>
                         <span>11,456,839</span>
                     </div>
 
                     <div class="community-details-bottom-creator">
-                        <div class="votes"><span>TOTAL VOTES</span><span>QmRRWupF</span></div>
-                        <div class="creator"><span>Creator:</span>0x42...9185<span></span></div>
+                        <div class="votes"><span style="font-weight: bold;">TOTAL VOTES </span><span>QmRRWupF</span>
+                        </div>
+                        <div class="creator"><span style="font-weight: bold;">Creator: </span>0x42...9185<span></span>
+                        </div>
                     </div>
 
                     <div class="community-details-bottom-statistics">
-                        <div></div>
-                        <div></div>
+                        <div class="statistics">
+                            <div class="flex">
+                                <span>FOR</span>
+                                <span>79,693,054</span>
+                            </div>
+                            <div class="progress success"></div>
+                        </div>
+                        <div class="statistics">
+                            <div class="flex">
+                                <span>AGAINST</span>
+                                <span>79,693,054</span>
+                            </div>
+                            <div class="progress danger"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -367,7 +386,7 @@
         <div class="road-container">
             <div class="road-container-card">
                 <div class="road-container-card-top">
-                    <img class="card-icon-first" src="./src/assets/paradis icon/arrow.svg" alt="">
+                    <img class="card-icon blue" src="./src/assets/paradis icon/arrow.svg" alt="">
                     <span>First Steps</span>
                 </div>
                 <div class="card-box">
@@ -382,7 +401,7 @@
             </div>
             <div class="road-container-card">
                 <div class="road-container-card-top">
-                    <img class="card-icon-second" src="./src/assets/paradis icon/code.svg" alt="">
+                    <img class="card-icon orange" src="./src/assets/paradis icon/code.svg" alt="">
                     <span>Development Stages</span>
                 </div>
                 <div class="card-box">
@@ -398,7 +417,7 @@
             </div>
             <div class="road-container-card">
                 <div class="road-container-card-top">
-                    <img class="card-icon-third" src="./src/assets/paradis icon/speak.svg" alt="">
+                    <img class="card-icon green" src="./src/assets/paradis icon/speak.svg" alt="">
                     <span>Learning To Speak</span>
                 </div>
                 <div class="card-box">
@@ -413,7 +432,7 @@
             </div>
             <div class="road-container-card">
                 <div class="road-container-card-top">
-                    <img class="card-icon-fourth" src="./src/assets/paradis icon/grow.svg" alt="">
+                    <img class="card-icon pink" src="./src/assets/paradis icon/grow.svg" alt="">
                     <span>Growing Up</span>
                 </div>
                 <div class="card-box">
@@ -423,15 +442,14 @@
                     <div><i class="fa-solid fa-circle-xmark"></i><span>Building NFT Platform</span></div>
                     <div><i class="fa-solid fa-circle-xmark"></i><span>Massive influencer
                             partnerships</span></div>
-                    <div><i class="fa-solid fa-circle-xmark"></i><span>20000 Telegram members</span></div>
+                    <div><i class="fa-solid fa-circle-check"></i></i><span>20000 Telegram members</span></div>
                 </div>
             </div>
         </div>
 
     </section>
 
-    <section class="social container">
-
+    <section class="social">
         <span>OUR COMMUNITY</span>
         <h2>Join others in the Eden <br> Smart Chain Community</span></h2>
         <p class="social-top"> Fantom is a global, decentralized network with validators and community members from all
@@ -440,19 +458,19 @@
         </div>
         <div class="social-main container">
             <div class="social-box">
-                <img class="discord" src="./src/assets/paradis icon/dc.svg" alt="">
+                <img class="socials discord" src="./src/assets/paradis icon/dc.svg" alt="">
                 <h3>Discord</h3>
                 <p>Chat in real time with the Eden <br> community</p>
                 <button>JOIN NOW</button>
             </div>
             <div class="social-box-center">
-                <img class="twitter" src="./src/assets/paradis icon/twitter.svg" alt="">
+                <img class="socials twitter" src="./src/assets/paradis icon/twitter.svg" alt="">
                 <h3>Twitter</h3>
                 <p>Chat in real time with the Eden <br> community</p>
                 <button class="middle">JOIN NOW</button>
             </div>
             <div class="social-box">
-                <img class="telegram" src="./src/assets/paradis icon/telegram.svg" alt="">
+                <img class="socials telegram" src="./src/assets/paradis icon/telegram.svg" alt="">
                 <h3>Telegram</h3>
                 <p>Chat in real time with the Eden <br> community</p>
                 <button>JOIN NOW</button>

@@ -1,5 +1,5 @@
 .container-community {
-  padding: 5rem 0;
+  padding: 3rem 0;
   width: 100%;
   background: rgb(151, 150, 240); /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -29,7 +29,6 @@
       &-top {
         max-width: 80%;
         padding-bottom: 4rem;
-        border: 1px solid red;
 
         h2 {
           text-align: left;
@@ -37,29 +36,65 @@
       }
 
       &-bottom {
-        @include space-between;
-        flex-direction: column;
         background-color: #ffffff8c;
         padding: 40px 20px;
         max-width: 80%;
         border-radius: 32px;
         font-size: 13px;
-        height: 288px;
-        width: 612px;
+        padding: 50px 30px;
+        display: flex;
+        flex-wrap: wrap;
 
         &-total {
-          flex: 1;
+          width: 50%;
           display: flex;
           flex-direction: column;
+          gap: 16px;
 
           span:nth-child(2) {
             color: $secondary-color;
             font-weight: 600;
+            font-size: 25px;
+          }
+        }
+
+        &-statistics {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          margin-top: 50px;
+          gap: 20px;
+
+          .statistics {
+            width: 50%;
+            padding: 18px;
+            background-color: white;
+            border-radius: 8px;
+
+            .progress {
+              height: 5px;
+              border-radius: 5px;
+              margin-top: 10px;
+            }
+
+            .danger {
+              background-color: red;
+            }
+
+            .success {
+              background-color: green;
+            }
+
+            span {
+              font-weight: bold;
+            }
           }
         }
 
         &-creator {
-          flex: 1;
+          width: 50%;
+          @include column;
+          gap: 16px;
         }
       }
     }
@@ -79,6 +114,10 @@
 }
 
 @media only screen and (max-width: 1220px) {
+  .container-community .community-details-bottom {
+    max-width: 100%;
+  }
+
   .community {
     flex-direction: column;
     padding: 0 24px;
@@ -93,5 +132,26 @@
   .container-community .community-details-top {
     max-width: 100%;
     text-align: center;
+  }
+
+  .container-community .community-details-bottom-creator {
+    order: 3;
+  }
+
+  .container-community .community-details-bottom {
+    padding: 30px 16px;
+  }
+
+  .container-community .community-details-bottom-statistics {
+    margin-bottom: 40px;
+  }
+
+  .flex {
+    font-size: 12px;
+    gap: 10px;
+  }
+
+  .container-community .community-details-bottom-statistics .statistics {
+    padding: 8px;
   }
 }

@@ -11,19 +11,18 @@
   }
 
   &-container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     gap: 20px;
 
     &-card {
       .card-box {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: auto;
         gap: 10px;
         padding-top: 10px;
 
         div {
-          width: 244px;
           padding: 20px;
           background-color: $i-bg;
           border-radius: 8px;
@@ -41,38 +40,6 @@
           font-weight: 600;
           padding: 20px 0;
         }
-
-        .card-icon-first {
-          width: 20px;
-          height: 20px;
-          padding: 20px;
-          background-color: #80aef7;
-          border-radius: 50%;
-        }
-
-        .card-icon-second {
-          width: 15px;
-          height: 15px;
-          padding: 20px;
-          background-color: #f5c27b;
-          border-radius: 50%;
-        }
-
-        .card-icon-third {
-          width: 15px;
-          height: 15px;
-          padding: 20px;
-          background-color: #62f5d1;
-          border-radius: 50%;
-        }
-
-        .card-icon-fourth {
-          width: 15px;
-          height: 15px;
-          padding: 20px;
-          background-color: #fa9d96;
-          border-radius: 50%;
-        }
       }
     }
   }
@@ -81,16 +48,17 @@
 @media only screen and (max-width: 1220px) {
   .road-container {
     flex-wrap: wrap;
+    padding: 0 24px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .road {
-    width: 100%;
+    padding: 3rem 24px;
   }
 
   .road-container {
-    justify-content: flex-start;
+    grid-template-columns: auto;
     width: 100%;
   }
 
@@ -99,10 +67,6 @@
   }
 
   .card-box {
-    width: 100%;
-  }
-
-  .road-container-card .card-box div {
     width: 100%;
   }
 }

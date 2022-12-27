@@ -22,6 +22,7 @@
     font-size: 43px;
     padding: 1rem;
     font-weight: 600;
+    line-height: 50px;
   }
 
   &-explanation {
@@ -56,7 +57,7 @@
   }
 
   .hero-description {
-    font-size: 28px;
+    font-size: 25px;
   }
 
   .hero-explanation {
@@ -80,5 +81,9 @@
 
   .hero-text {
     padding: 3rem 24px 0;
+  }
+
+  .hero-description {
+    line-height: 30px;
   }
 }
